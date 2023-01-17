@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TipsFragment"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips to look fit"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:letterSpacing="0.06"
+        android:fontFamily="sans-serif-black" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="20dp"
+        >
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_period="2000"
+            app:iss_delay="0"
+            app:iss_title_background="@drawable/slider_back"
+            />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
